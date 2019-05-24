@@ -1,48 +1,63 @@
-/* * Body
-     * font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-     * color: '#777'
-     * background: '#777'
-     * width: '960px'
-     * font-size: '18px'
-   * Header, Nav, Section, Aside, and Footer
-     * background: '#ebebeb'
-   * Article
-     * color: '#ebebeb',
-     * background: '#777'
-   * h1 and p
-     * color: '#777',
-     * background: '#ebebeb'
-3. The width of the section should be:
-   * section: 495px */
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
-   body {
-       font-family: Arial, 'Helvetica Neue',  Helvetica, sans-serif;
-       color: #777;
-       background: #777;
-       width: '960px';
-       font-size: 18px;
-   }
+body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    background: #777;
+    width: '960px';
+    font-size: 18px;
+}
 
-   header, nav, section, aside, footer {
+header,
+nav,
+section,
+aside,
+footer {
     background-color: #ebebeb;
     text-align: center;
-   }
+}
 
-   .rectangle {
-       margin: 10px 15% 0 12%;
-       padding: 2.7em;
+/*This is for the header, nav, and footer.  They all have the same shape*/
+.rectangle {
+    margin: 10px 15% 0 12%;
+    padding: 38px;
+    width: 799px;
+}
 
-   }
-   article {
-       color: #ebebeb;
-       background: #777;
-   }
+article {
+    color: #ebebeb;
+    background: #777;
+}
 
-   h1, p, article h2 {
-       color: #777;
-       background: #ebebeb;
-   }
+h1,
+p {
+    color: #777;
+    background: #ebebeb;
+    margin: 10px 20px;
+}
 
-   section {
-       width: 495px;
-   }
+article {
+    margin: 10px;
+    padding-bottom: 10px;
+
+}
+
+section {
+    width: 495px;
+    line-height: 3em;
+    float: left;
+    margin: 20px 20px 10px 12%;
+    padding-top: 1em;
+}
+
+aside {
+    float: left;
+    width: 360px;
+    margin: 20px 25px 10px 0;
+    padding-bottom: 14.15em;
+    line-height: 3em;
+}
